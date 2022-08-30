@@ -1,0 +1,25 @@
+{% include "base.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Center an Image using text align center</title>
+    <style>
+      .img-container {
+        text-align: center;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="img-container"> <!-- Inline parent element -->
+      <img src="{% url 'facecam_feed' %}" alt="Girl in a jacket" width="900" height="600"> 
+    </span>
+  </body>
+</html>
+
+
+{% endblock content %}
